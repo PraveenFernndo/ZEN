@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.admin-panel {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-buttons[name="payment"] {
+    width: 150px;
+    margin-top: 20px;
+    background-color: #38cc7d;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.top-information-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.class-select {
+    width: 200px;
+    height: 40px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.main-student-count-display {
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 30%;
+    text-align: center;
+    margin: 20px;
+    background-color: #5accdc;
+    color: #ffffff;
+}
+
+.main-payment-amount-display {
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 30%;
+    text-align: center;
+    margin: 20px;
+    background-color: #eb805d;
+    color: #ffffff;
+}
+
+.header-buttons[name="attendance"] {
+    width: 150px;
+    margin-top: 20px;
+    background-color: #cc3878;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.sidebar li {
+    list-style: none;
+    margin: 50px 0;
+}
+
+
+.sidebar li div {
+    cursor: pointer;
+    padding: 0px;
+    height: 20px;
+    background-color: #9b9b9b;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+}
+
+.sidebar hr {
+    margin-bottom: 100px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 70%;
+    height: 100vh;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.schedule-classes-holder div ul {
+    list-style-type: none;
+}
+
+.schedule-classes-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+
+}
+
+.schedule-class-item {
+    min-width: 30%;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #643783;
+    color: #f4f4f4;
+}
+
+.schedule-class-item button {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    color: white;
+    cursor: pointer
+}
+
+.schedule-class-item [name="schedule"] {
+    background-color: #38cc7d;
+}
+
+.schedule-class-item [name="cancle"] {
+    background-color: #cc387b;
+}
+
+.details {
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.attendance-div {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    border: #dfdfdf solid 1px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin: 10px;
+}
+
+.payments-div {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    border: #dfdfdf solid 1px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin: 10px;
+}
+
+.student-list {
+    width: 800px;
+    height: 300px;
+    border-radius: 15px;
+    border: #dfdfdf solid 1px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin: 20px;
+    margin-top: 70px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.piechart {
+    text-align: center;
+}
+
+.piechart p {
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.student-rank-table {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: #dfdfdf solid 1px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin-top: 20px
+}
+
+.student-rank-table tr td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: #dfdfdf solid 1px;
+}
+
+.student-rank-table tr th {
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: #dfdfdf solid 2px;
+}
+
+.student-details {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px
+}
+
+.student-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.student-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-image img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.student-attendance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-attendance div {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    border: #333 solid 1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-student {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-student-form {
+    width: 40%;
+    padding: 20;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-student-form input {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: #838383 solid 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.add-student-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.assignClasses {
+    background-color: #d86464;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 500px;
+    height:40px
+}
+
+.downloadQR{
+      background-color: #64d898;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 500px;
+    height:40px;
+    margin-bottom:10px;
+}
+
+.add-student-form select {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: #838383 solid 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.QrImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.QrHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%
+}
+
+.add-class {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-class-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.add-class-form input[type="time"] {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: #838383 solid 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.viewClasses {
+    background-color: #d66a6a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.add-class-form select {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: #838383 solid 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.add-class-form {
+    width: 40%;
+    padding: 20;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.assign-class{
+    width:100%;
+    height:100vh;
+}
+
+.main-container-assign-class{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.selector-holder{
+    width:80%;
+    background-color: #e4e2e6;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.selector-holder select{
+    width:90%;
+    height:40px;
+    border:none;
+    border-radius: 10px;
+    padding:5px;
+    margin: 10px;
+}
+
+.selector-holder button{
+    width:80%;
+    height:40px;
+    border:none;
+    border-radius: 10px;
+    margin-top:30px;
+    background-color: #643783;
+    color:white;
+    cursor:pointer
+}
+.searched-classes{
+   max-width: 1000px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.class-list-item{
+    min-width:fit-content;
+    border: solid 1px black;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+    border-radius: 10px;
+    margin-top:50px
+}
+.class-list-item button{
+    width:90%;
+    height:30px;
+    border-radius: 10px;
+    border:none;
+    background-color: #38cc7d;
+    border: none;
+    margin-top: 20px;
+    color:white;
+    cursor:pointer
+}
+
+.mark-attendance {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.mark-attendance-select {
+    width: 80%;
+    padding: 20;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(16, 16, 16, 0.1);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mark-attendance-select select {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border: #838383 solid 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
